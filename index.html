@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Window Cleaning in Renton, WA | Window Genie of Renton</title>
+    <meta name="description"
+        content="Window Genie of Renton is your local leader in window cleaning, pressure washing, holiday lighting, gutter cleaning, and window tinting. Estimates are fast and free!" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to Main Content</a>
+
+    <!-- Top utility bar -->
+    <div class="topbar">
+        <div class="wrap topbar__inner">
+            <a class="topbar__brand" href="https://www.neighborly.com" target="_blank" rel="noreferrer">A Neighborly
+                Company</a>
+            <div class="topbar__actions">
+                <a class="topbar__link" href="https://jobs.windowgenie.com" target="_blank" rel="noreferrer">Apply
+                    Locally</a>
+                <a class="topbar__link" href="https://www.windowgenie.com/special-offers/" target="_blank"
+                    rel="noreferrer">Special Offers</a>
+                <a class="topbar__link" href="https://franchise.neighborly.com" target="_blank" rel="noreferrer">Own a
+                    Franchise</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="top">
+        <div class="wrap header__inner">
+            <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-controls="mobileNav"
+                aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <a class="logo" href="#">
+                <img src="https://www.windowgenie.com/brand/_assets/images/brand-img/brand-logo.svg" alt="Window Genie"
+                    loading="eager" />
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="#services">Services</a>
+                <a href="#why">Why Us</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#offers">Special Offers</a>
+            </nav>
+
+            <div class="header__cta">
+                <a class="btn btn--ghost" href="tel:+12062090417" aria-label="Call us">(206) 209-0417</a>
+                <a class="btn" href="#quote">Request a Quote</a>
+            </div>
+        </div>
+
+        <!-- Mobile nav -->
+        <div class="mobileNav" id="mobileNav" hidden>
+            <div class="wrap mobileNav__inner">
+                <div class="mobileNav__top">
+                    <span class="mobileNav__title">Menu</span>
+                    <button class="iconBtn" id="menuCloseBtn" aria-label="Close menu">✕</button>
+                </div>
+
+                <div class="mobileNav__links">
+                    <a href="#services" data-close>Services</a>
+                    <a href="#why" data-close>Why Us</a>
+                    <a href="#reviews" data-close>Reviews</a>
+                    <a href="#offers" data-close>Special Offers</a>
+                    <a href="tel:+12062090417" data-close>Call (206) 209-0417</a>
+                    <a href="#quote" class="btn btn--full" data-close>Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Promo bar -->
+    <div class="promo">
+        <div class="wrap promo__inner">
+            <a href="https://www.windowgenie.com/annual-maintenance-plan/" target="_blank" rel="noreferrer">
+                Save Up to 30% with Our Annual Maintenance Plans! Click here to learn more
+            </a>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero__bg" role="img" aria-label="Window Genie team in branded vehicle"></div>
+
+            <div class="wrap hero__inner">
+                <div class="hero__left">
+                    <h1>Welcome to Window Genie of Renton</h1>
+                    <p>
+                        Window Genie® is your local leader in home services. We specialize in window cleaning,
+                        pressure washing, holiday lighting, gutter cleaning, and window tinting. Estimates are always
+                        fast and free!
+                    </p>
+
+                    <div class="stars" aria-label="Five star rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+
+                    <div class="seg">
+                        <button class="seg__btn is-active" type="button">Residential</button>
+                        <button class="seg__btn" type="button">Commercial</button>
+                    </div>
+                </div>
+
+                <div class="hero__right" id="quote">
+                    <div class="card">
+                        <div class="card__head">
+                            <h2>Let Us Call You</h2>
+                            <p>In under 2 minutes</p>
+                        </div>
+
+                        <!-- Static form (front-end only) -->
+                        <form class="form" id="quoteForm">
+                            <label>
+                                <span>Name*</span>
+                                <input name="name" autocomplete="name" required />
+                            </label>
+
+                            <label>
+                                <span>Email*</span>
+                                <input name="email" type="email" autocomplete="email" required />
+                            </label>
+
+                            <label>
+                                <span>Phone Number*</span>
+                                <input name="phone" type="tel" autocomplete="tel" required />
+                            </label>
+
+                            <label>
+                                <span>ZIP Code*</span>
+                                <input name="zip" inputmode="numeric" pattern="[0-9]{5}" placeholder="98055" required />
+                            </label>
+
+                            <label class="check">
+                                <input type="checkbox" />
+                                <span>Yes! You can text me service reminders and other messages.</span>
+                            </label>
+
+                            <label class="check">
+                                <input type="checkbox" />
+                                <span>Yes, sign me up for emails about services, updates or promotions.</span>
+                            </label>
+
+                            <button class="btn btn--full" type="submit">Request a Quote</button>
+                            <p class="fine">
+                                By submitting, you agree that this is a front-end demo clone and does not submit to
+                                Window Genie.
+                            </p>
+
+                            <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+                                Thank you for contacting us! A representative will get back to you shortly to schedule
+                                service.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section" id="services">
+            <div class="wrap">
+                <div class="section__head">
+                    <h2>Window Genie: Your Exterior Cleaning Experts</h2>
+                    <p>
+                        Our commitment to customer satisfaction and professionalism is what sets us apart from the
+                        competition.
+                        You can feel safe knowing our team is trained, insured, bonded, and drives custom-wrapped
+                        vehicles.
+                    </p>
+                </div>
+
+                <div class="grid">
+                    <article class="service">
+                        <div class="service__icon">
+                            <img src="https://www.windowgenie.com/us/en-us/_assets/images/service-icons/wdg-window-cleaning-color.svg"
+                                alt="" />
+                        </div>
+                        <h3>Window Cleaning</h3>
+                        <p>When your greatest wish is to see outside.</p>
+                        <a class="link" href="https://www.windowgenie.com/window-cleaning/" target="_blank"
+                            rel="noreferrer">Learn More</a>
+                    </article>
+
+                    <article class="service">
+                        <div class="service__icon">
+                            <img src="https://www.windowgenie.com/us/en-us/_assets/images/service-icons/wdg-pressure-washing-color.svg"
+                                alt="" />
+                        </div>
+                        <h3>Pressure Washing</h3>
+                        <p>We’ll grant you a sparkling exterior.</p>
+                        <a class="link" href="https://www.windowgenie.com/pressure-washing/" target="_blank"
+                            rel="noreferrer">Learn More</a>
+                    </article>
+
+                    <article class="service">
+                        <div class="service__icon">
+                            <img src="https://www.windowgenie.com/us/en-us/_assets/images/service-icons/wdg-holiday-lights-color.svg"
+                                alt="" />
+                        </div>
+                        <h3>Holiday Lighting</h3>
+                        <p>Give your house a glow-up for the holidays.</p>
+                        <a class="link" href="https://www.windowgenie.com/holiday-lighting/" target="_blank"
+                            rel="noreferrer">Learn More</a>
+                    </article>
+
+                    <article class="service">
+                        <div class="service__icon">
+                            <img src="https://www.windowgenie.com/us/en-us/_assets/images/service-icons/wdg-gutter-cleaning-color.svg"
+                                alt="" />
+                        </div>
+                        <h3>Gutter Cleaning</h3>
+                        <p>No magic. Just clean and free-flowing gutters.</p>
+                        <a class="link" href="https://www.windowgenie.com/gutter-cleaning/" target="_blank"
+                            rel="noreferrer">Learn More</a>
+                    </article>
+
+                    <article class="service">
+                        <div class="service__icon">
+                            <img src="https://www.windowgenie.com/us/en-us/_assets/images/service-icons/wdg-window-tinting-color.svg"
+                                alt="" />
+                        </div>
+                        <h3>Window Tinting</h3>
+                        <p>Disenchanted with the heat and glare? Let us help.</p>
+                        <a class="link" href="https://www.windowgenie.com/window-tinting/" target="_blank"
+                            rel="noreferrer">Learn More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why choose us -->
+        <section class="split" id="why">
+            <div class="split__media" aria-hidden="true">
+                <img src="https://www.windowgenie.com/us/en-us/_assets/images/service-component-images/wdg-service-component-desktop.webp"
+                    alt="" />
+            </div>
+
+            <div class="split__content">
+                <div class="wrap split__contentInner">
+                    <div class="eyebrow">Why Choose Us:</div>
+                    <h2>Why Choose Us:</h2>
+
+                    <div class="bullets">
+                        <div class="bullet">
+                            <h3>Savings on Annual Maintenance</h3>
+                            <p>
+                                Our annual maintenance plan can save you up to 30%. Mix and match services to keep your
+                                home beautiful and
+                                help avoid costly repairs or replacements.
+                            </p>
+                        </div>
+
+                        <div class="bullet">
+                            <h3>Expert Care</h3>
+                            <p>
+                                Our bonded, insured, background-checked and OSHA-trained service professionals bring
+                                expertise and equipment,
+                                delivering a premier customer experience.
+                            </p>
+                        </div>
+
+                        <div class="bullet">
+                            <h3>Peace of Mind</h3>
+                            <p>
+                                We stand by the promise to do the job right and our work is backed by the Neighborly
+                                Done Right Promise®.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ctaRow">
+                        <a class="btn" href="#quote">Request a Quote</a>
+                        <a class="btn btn--ghost" href="tel:+12062090417">Call Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="section section--alt" id="reviews">
+            <div class="wrap">
+                <div class="section__head row">
+                    <div>
+                        <h2>Customer Reviews</h2>
+                        <a class="link" href="https://www.windowgenie.com/renton/reviews/" target="_blank"
+                            rel="noreferrer">View All Reviews</a>
+                    </div>
+                    <div class="sliderBtns">
+                        <button class="iconBtn" id="prevReview" aria-label="Previous review">‹</button>
+                        <button class="iconBtn" id="nextReview" aria-label="Next review">›</button>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <div class="reviews__track" id="reviewsTrack">
+                        <article class="review">
+                            <div class="quote">
+                                <img src="https://www.windowgenie.com/us/en-us/_assets/images/brand-img/testimonials/wdg-testimonial-icon-svg.svg"
+                                    alt="" />
+                            </div>
+                            <p>Excellent service was provided. I am extremely satisfied with the window films we
+                                selected for the home.</p>
+                            <div class="review__meta">
+                                <span class="name">Pam W.</span>
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                            </div>
+                        </article>
+
+                        <article class="review">
+                            <div class="quote">
+                                <img src="https://www.windowgenie.com/us/en-us/_assets/images/brand-img/testimonials/wdg-testimonial-icon-svg.svg"
+                                    alt="" />
+                            </div>
+                            <p>The service was convenient and affordable. The technician was very courteous. Overall
+                                great service!</p>
+                            <div class="review__meta">
+                                <span class="name">Shan E.</span>
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                            </div>
+                        </article>
+
+                        <article class="review">
+                            <div class="quote">
+                                <img src="https://www.windowgenie.com/us/en-us/_assets/images/brand-img/testimonials/wdg-testimonial-icon-svg.svg"
+                                    alt="" />
+                            </div>
+                            <p>The guys that came to work at my house did an excellent job. They took their time and
+                                were thorough.</p>
+                            <div class="review__meta">
+                                <span class="name">Ben S.</span>
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="ndrp">
+                    <img src="https://www.windowgenie.com/brand/_assets/images/wdg-ndrp-small.svg"
+                        alt="Neighborly Done Right Promise" />
+                    <p>
+                        The Neighborly Done Right Promise® delivered by Window Genie®, a proud Neighborly company.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers -->
+        <section class="section" id="offers">
+            <div class="wrap">
+                <div class="section__head">
+                    <h2>Our Special Offers</h2>
+                    <p>
+                        Check out our latest information on discounts, promotions, and special offers available for
+                        Window Genie of Renton services
+                        to maintain and beautify your home.
+                    </p>
+                    <a class="link" href="https://www.windowgenie.com/renton/special-offers/" target="_blank"
+                        rel="noreferrer">View All Special Offers</a>
+                </div>
+
+                <div class="offerCard">
+                    <div class="offerCard__img" aria-hidden="true">
+                        <img src="https://www.windowgenie.com/us/en-us/_assets/images/local-hero-images/wdg-local-home-page-header-alt-desktop.webp"
+                            alt="" />
+                    </div>
+                    <div class="offerCard__body">
+                        <div class="pill">Pressure Washing</div>
+                        <h3>Free Concrete Cleaning Up to 300 Sq. Ft. with Purchase of a House Wash</h3>
+                        <p class="muted">
+                            Limited Time Offer. No cash value. Limit one per customer. Offer expires 03/31/2026.
+                            Offer must be presented at time of scheduling. Not valid with any other offer.
+                            Services performed by locally owned and independently operated franchise locations.
+                            Valid only at Window Genie of Renton. Other restrictions may apply.
+                        </p>
+                        <div class="offerCard__meta">
+                            <span class="metaKey">Expires:</span> <strong>03/31/2026</strong>
+                        </div>
+                        <div class="ctaRow">
+                            <a class="btn" href="#quote">Request a Quote</a>
+                            <a class="btn btn--ghost" href="#top">Back to Top</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="wrap footer__inner">
+            <div class="footer__brand">
+                <img src="https://www.windowgenie.com/brand/_assets/images/brand-img/brand-logo.svg"
+                    alt="Window Genie" />
+                <p class="muted">Window Genie of Renton</p>
+            </div>
+
+            <div class="footer__cols">
+                <div>
+                    <h4>Contact</h4>
+                    <a href="tel:+12062090417">(206) 209-0417</a>
+                    <a href="#quote">Request a Quote</a>
+                </div>
+
+                <div>
+                    <h4>Explore</h4>
+                    <a href="#services">Services</a>
+                    <a href="#why">Why Us</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#offers">Special Offers</a>
+                </div>
+
+                <div>
+                    <h4>Notes</h4>
+                    <p class="muted">
+                        Static front-end clone for layout/styling practice. Trademarks and content belong to their
+                        respective owners.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap footer__bottom">
+            <span class="muted">© <span id="year"></span> Demo Clone</span>
+            <a class="muted" href="#top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
